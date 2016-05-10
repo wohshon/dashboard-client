@@ -42,7 +42,7 @@ app.get('/client', dashboard.client);
 //non testing routes
 app.get("/dashboard-client",dashboard.dashboardclient);
 
-https.listen(3000, function(){
-	  console.log('Express server listening on port 3000');
+https.listen(app.get('port'), function(){
+	  console.log('Express server listening on port '+ app.get('port'));
 });
 
